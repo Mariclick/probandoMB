@@ -27,5 +27,5 @@ const swaggerSpect = {
 
 
 }
-export const openApiSpecification = swaggerJsDoc.swaggerSpect;
+export const openApiSpecification = swaggerJsDoc(swaggerSpect);
 

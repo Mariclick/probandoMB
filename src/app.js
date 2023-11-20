@@ -15,9 +15,11 @@ app.use(express.json())
 app.use('/api', userRoutes);
 
 //swagger
-app.use('/api-doc', swaggerUI.serve);
-app.use('/api-doc', swaggerUI.setup(openApiSpecification));
-//app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(openApiSpecification));
+app.use(
+    "/api-docs",
+    swaggerUI.serve,
+    swaggerUI.setup(openApiSpecification)
+  );
 
 
 
